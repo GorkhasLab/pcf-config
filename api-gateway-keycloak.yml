@@ -17,12 +17,9 @@ ribbon:
   MaxAutoRetries: 1
 
 zuul:
-  ignored-services: '*'
   routes:
-    foo-service:
-      path: /api/**
-      service-id: foo-service
-      strip-prefix: false
+    foo-service: /api/**
+      serviceId: FOO-SERVICE
 security:
   basic:
     enabled: false
