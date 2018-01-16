@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api-gateway-keycloak
+---
+spring:
+  profiles: cloud
+zuul:
+  ignored-services: '*'
+  routes:
+    foo-service:
+      path: /api/**
+      service-id: foo-service
+      strip-prefix: false
+---

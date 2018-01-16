@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: foo-service
+---
+spring:
+  profiles: cloud
+---
