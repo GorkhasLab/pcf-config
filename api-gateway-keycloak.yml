@@ -15,11 +15,11 @@ ribbon:
   ReadTimeout: 60000
   IsSecure: true
   MaxAutoRetries: 1
-
 zuul:
   routes:
-    foo-service: /api/**
-      serviceId: FOO-SERVICE
+    foo-service:
+      path: /api/**
+      service-id: FOO-SERVICE
 security:
   basic:
     enabled: false
