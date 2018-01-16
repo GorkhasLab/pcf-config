@@ -7,4 +7,10 @@ spring:
 eureka:
   instance:
     secure-port-enabled: true
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
 ---
