@@ -19,7 +19,7 @@ zuul:
   routes:
     foo-service:
       path: /api/**
-      service-id: FOO-SERVICE
+      service-id: foo-service
 security:
   basic:
     enabled: false

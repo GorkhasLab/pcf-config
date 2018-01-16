@@ -4,9 +4,6 @@ spring:
 ---
 spring:
   profiles: cloud
-eureka:
-  instance:
-    secure-port-enabled: true
 security:
   basic:
     enabled: false
