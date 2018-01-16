@@ -11,4 +11,10 @@ zuul:
       path: /api/**
       service-id: foo-service
       strip-prefix: false
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
 ---
