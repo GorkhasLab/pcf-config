@@ -4,6 +4,7 @@ spring:
 ---
 spring:
   profiles: cloud
+server:
   ssl:
     key-store: classpath:keystore.jks
     key-store-password: password
