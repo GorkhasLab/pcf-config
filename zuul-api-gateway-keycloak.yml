@@ -4,18 +4,10 @@ spring:
 ---
 spring:
   profiles: cloud
-server:
-  ssl:
-    key-store: classpath:keystore.jks
-    key-store-password: password
-    key-password: password    
 
 ribbon:
-  TrustStore: keystore.jks
-  TrustStorePassword : password
-  ReadTimeout: 60000
   IsSecure: true
-  MaxAutoRetries: 1
+
 zuul:
   ignored-services: '*'
   prefix: ''
