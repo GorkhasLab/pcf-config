@@ -21,7 +21,7 @@ zuul:
     foo-service:
       path: /foo/**
       service-id: foo-service
-      strip-prefix: true
+  strip-prefix: true
 security:
   basic:
     enabled: false
