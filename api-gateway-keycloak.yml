@@ -16,11 +16,14 @@ ribbon:
   IsSecure: true
   MaxAutoRetries: 1
 zuul:
+  ignored-services: '*'
+  prefix: ''
   routes:
     foo-service:
       path: /foo/**
       service-id: foo-service
-      strip-prefix: true
+      strip-prefix: false
+  strip-prefix: false
 security:
   basic:
     enabled: false
