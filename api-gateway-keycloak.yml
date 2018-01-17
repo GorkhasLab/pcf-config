@@ -18,8 +18,9 @@ ribbon:
 zuul:
   routes:
     foo-service:
-      path: /api/foo/**
+      path: /api/**
       service-id: foo-service
+      strip-prefix: true
 security:
   basic:
     enabled: false
