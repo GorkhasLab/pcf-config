@@ -21,20 +21,20 @@ spring:
 #        keyStoreType: PKCS12
 #        keyAlias: service1
 # ===================================================================
-server:
-  ssl:
-    key-store: classpath:keystore.jks
-    key-store-password: password
-    key-password: password
-    key-alias: ${spring.application.name}
-    key-store-type: PKCS12
-
-ribbon:
-  TrustStore: keystore.jks
-  TrustStorePassword : password
-  ReadTimeout: 60000
-  IsSecure: true
-  MaxAutoRetries: 1
+#server:
+#  ssl:
+#    key-store: classpath:keystore.jks
+#    key-store-password: password
+#    key-password: password
+#    key-alias: ${spring.application.name}
+#    key-store-type: PKCS12
+#
+#ribbon:
+#  TrustStore: keystore.jks
+#  TrustStorePassword : password
+#  ReadTimeout: 60000
+#  IsSecure: true
+#  MaxAutoRetries: 1
 zuul:
   ignored-services: '*'
   prefix: ''
