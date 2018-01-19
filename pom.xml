@@ -8,7 +8,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <springBootVersion>2.0.0.M7</springBootVersion>
+        <springBootVersion>1.5.9.RELEASE</springBootVersion>
         <springCloudVersion>Finchley.M2</springCloudVersion>
         <pivotalSpringCloudVersion>1.6.0.RELEASE</pivotalSpringCloudVersion>
         <java.version>1.8</java.version>

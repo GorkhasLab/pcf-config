@@ -1,3 +1,10 @@
 spring:
   application:
     name: uaa-keycloak
+---
+spring:
+  profiles: cloud
+security:
+  basic:
+    enabled: false
+---
