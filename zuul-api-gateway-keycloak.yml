@@ -11,6 +11,7 @@ server:
 security:
   basic:
     enabled: false
+  require-ssl: true
 zuul:
   ignored-services: '*'
   prefix: ''
