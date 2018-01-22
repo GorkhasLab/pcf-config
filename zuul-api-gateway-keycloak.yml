@@ -3,10 +3,16 @@ spring:
   profiles: cloud
 server:
   ssl:
-    key-store: classpath:${spring.application.name}.p12
-    key-password: password
+    enabled: true
     key-alias: ${spring.application.name}
+    key-store: classpath:${spring.application.name}.p12
     key-store-type: PKCS12
+    key-store-password: password
+    key-password: password
+security:
+  require-ssl: true
+  basic:
+    enabled: false
 zuul:
   ignored-services: '*'
   prefix: ''
@@ -16,10 +22,6 @@ zuul:
       service-id: foo-service
       strip-prefix: false
   strip-prefix: false
-security:
-  basic:
-    enabled: false
-  require-ssl: true
 management:
   security:
     enabled: false
