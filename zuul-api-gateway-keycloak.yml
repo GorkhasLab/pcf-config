@@ -8,8 +8,7 @@ server:
     key-store: classpath:${spring.application.name}.p12
     key-store-type: PKCS12
     key-store-password: password
-    key-password: password
-  port: 0
+  port: 8443
 security:
   basic:
     enabled: false
@@ -32,4 +31,7 @@ management:
 eureka:
   instance:
     secure-port-enabled: true
+https:
+  enforcer:
+    enabled: true
 ---
