@@ -10,7 +10,6 @@ server:
     key-store-password: password
     key-password: password
 security:
-  require-ssl: true
   basic:
     enabled: false
 zuul:
