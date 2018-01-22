@@ -1,6 +1,10 @@
 ---
 spring:
   profiles: cloud
+  cloud:
+    config:
+      override-system-properties: false
+      override-none: true
 server:
   ssl:
     enabled: true
