@@ -28,5 +28,4 @@ management:
 eureka:
   instance:
     secure-port-enabled: true
-    prefer-ip-address: true
 ---
