@@ -3,13 +3,14 @@ spring:
   profiles: cloud
 server:
   ssl:
-    key-store: classpath:${spring.application.name}.jks
+    key-store: classpath:${spring.application.name}.p12
     key-password: password
     key-alias: ${spring.application.name}
     key-store-type: PKCS12
 security:
   basic:
     enabled: false
+  require-ssl: true
 eureka:
   instance:
     secure-port-enabled: true
