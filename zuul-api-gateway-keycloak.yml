@@ -20,6 +20,10 @@ zuul:
       path: /foo/**
       service-id: foo-service
       strip-prefix: false
+    uaa-keycloak:
+      path: /auth/**
+      service-id: uaa-keycloak
+      strip-prefix: false
   strip-prefix: false
 management:
   security:
