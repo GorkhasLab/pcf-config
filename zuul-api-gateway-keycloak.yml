@@ -22,4 +22,7 @@ security:
 management:
   security:
     enabled: false
+eureka:
+  instance:
+    secure-port-enabled: true
 ---

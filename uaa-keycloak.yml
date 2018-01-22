@@ -10,4 +10,7 @@ server:
 security:
   basic:
     enabled: false
+eureka:
+  instance:
+    secure-port-enabled: true
 ---
