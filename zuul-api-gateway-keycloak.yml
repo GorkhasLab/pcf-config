@@ -1,10 +1,6 @@
 ---
 spring:
   profiles: cloud
-  cloud:
-    config:
-      override-system-properties: false
-      override-none: true
 server:
   ssl:
     enabled: true
@@ -13,6 +9,7 @@ server:
     key-store-type: PKCS12
     key-store-password: password
     key-password: password
+  port: 0
 security:
   basic:
     enabled: false
