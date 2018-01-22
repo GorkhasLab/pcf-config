@@ -9,4 +9,5 @@ public class OnlyForPcfConfigAutoCompletion {
     public static void main(String[] args) {
         SpringApplication.run(OnlyForPcfConfigAutoCompletion.class, args);
     }
+
 }
