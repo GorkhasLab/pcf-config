@@ -20,4 +20,7 @@ eureka:
 management:
   security:
     enabled: false
+https:
+  enforcer:
+    enabled: true
 ---

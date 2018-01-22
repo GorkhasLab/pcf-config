@@ -17,4 +17,7 @@ eureka:
   instance:
     secure-port-enabled: true
     prefer-ip-address: true
+https:
+  enforcer:
+    enabled: true
 ---
